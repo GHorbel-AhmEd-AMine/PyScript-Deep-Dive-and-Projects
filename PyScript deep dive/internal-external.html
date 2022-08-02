@@ -1,0 +1,48 @@
+<!-- Working with built-in and external Pythin libraries -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+   <style>
+      h1 {
+       font-size: 20px; 
+       color: green; 
+       text-transform: uppercase;
+       text-align: center; 
+       margin: 0 0 35px 0; 
+       text-shadow: 0px 1px 0px #f2f2f2;
+         }
+    </style>
+  </head>
+    <h1>PyScript Python Libraries</h1>
+
+    <py-script>
+import sys
+print(sys.version)
+    </py-script>
+  </body>
+</html>
+
+
+----------------------------------------------------------
+For third-party libraries that are not part of the standard library, PyScript supports them.
+
+<html>
+    <head>
+      <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+      <py-env>
+            - numpy
+            - requests
+      </py-env>
+    </head>
+
+  <body>
+    <py-script>
+	import numpy as np
+	import requests
+    </py-script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+        - numpy
+        - matplotlib
+        - seaborn
+        - pandas
+    </py-env>
+</head>
+ 
+<body>
+    <br> This is sample webpage running on python with the help of Pyscript
+ 
+    <div id="random-plot">
+    <py-script >
+        import matplotlib.pyplot as plt
+        import numpy as np
+       
+        x = np.random.randn(1000)
+        y = np.random.randn(1000)
+       
+        fig, ax = plt.subplots(figsize=(15,8))
+        plt.title("Scatter plot with random number")
+        ax.scatter(x, y)
+        plt.tick_params(
+        axis='both',          
+        which='both',      
+        bottom=False,  
+        top=False,
+        left=False,
+        right=False,
+        labeltop=False,
+        labelleft=False,
+        labelright=False,      
+        labelbottom=False)
+       
+        plt.xlabel("Random numbers")
+        plt.ylabel("Random numbers")
+        fig
+    </py-script>
+</div>
+</body>
+</html>

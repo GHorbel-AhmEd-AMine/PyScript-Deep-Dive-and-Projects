@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Highest Paying Technologies</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+    <py-env>
+      - numpy
+      - matplotlib
+    </py-env>
+  </head>
+
+<body>
+	<p id="demo"></p>=
+  <div id="plot"></div>
+  <py-script output="plot">
+import matplotlib.pyplot as plt
+import numpy as np
+data = {'Project Management':15, 'Web Development':20, 'Cloud Computing':30,
+        'DataScience':35}
+courses = list(data.keys())
+values = list(data.values())
+  
+fig = plt.figure(figsize = (10, 5))
+ 
+# creating the bar plot
+plt.bar(courses, values, width = 0.4)
+plt
+ 
+    </py-script>
+  </body>
+</html>

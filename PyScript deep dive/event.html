@@ -1,0 +1,30 @@
+<!-- Events are also super easy to do. Just use addEventListener. But there’s a catch: if you use functions, you have to create a proxy of that function in order to work. That’s because of the type translations between the two languages.
+
+In order to communicate between Python and JavaScript, we “translate” objects between the two languages. Depending on the type of the object we either translate the object by implicitly converting it or by proxying it. 
+
+By “proxying” an object we mean producing a special object in the target language that forwards requests to the source language -->
+
+<html>
+
+    <head>
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    </head>
+    <body>
+   
+    <div>
+        <p id="change_me"> Click to Reveal</p>
+    </div>
+    
+    <py-script>
+import pyodide
+
+def on_click(e):
+    e.target.innerHTML = "PyScript is really awesome!!!"
+    
+change_me_element = document.getElementById('change_me')
+change_me_element.addEventListener('click', pyodide.create_proxy(on_click))
+    </py-script>
+    
+    </body>
+</html>

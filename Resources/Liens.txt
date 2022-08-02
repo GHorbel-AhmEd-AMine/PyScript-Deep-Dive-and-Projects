@@ -1,0 +1,11 @@
+https://pyodide.org/en/stable/usage/packages-in-pyodide.html
+
+https://stackoverflow.com/questions/tagged/pyscript
+
+https://twitter.com/pyscript_dev
+
+https://engineering.anaconda.com/2022/04/welcome-pyscript.html
+
+https://github.com/pyscript/pyscript
+
+

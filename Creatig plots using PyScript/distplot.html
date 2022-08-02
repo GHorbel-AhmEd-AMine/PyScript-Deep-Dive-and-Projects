@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+        - numpy
+        - seaborn
+        - matplotlib
+    </py-env>
+</head>
+<h1>Plotting a Distplot With the Histogram</h1>
+<body>
+    <div id="plot"></div>
+    <py-script output="plot">
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+<!-- sns.distplot([0, 1, 2, 3, 4, 5]) -->
+sns.histplot([0, 1, 2, 3, 4, 5])
+
+
+plt.show()
+plt
+
+    </py-script>
+
+</body>
+
+</html>

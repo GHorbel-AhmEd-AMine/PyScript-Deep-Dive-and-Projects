@@ -1,0 +1,28 @@
+<!-- output python code to html tags -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  <style>
+      h1 {
+       font-size: 20px; 
+       color:green; 
+       text-transform: uppercase;
+       text-align: center; 
+       margin: 0 0 35px 0; 
+       text-shadow: 0px 1px 0px #f2f2f2;
+         }
+       </style>
+  </head>
+  <body>
+    <h1>PyScript with Output</h1>
+
+    <div id="print-this" style = "color:red;font-weight: bold;"></div>
+
+    <py-script output="print-this">
+    print("This will Print in Red and Bold")
+    </py-script>
+  </body>
+</html>
